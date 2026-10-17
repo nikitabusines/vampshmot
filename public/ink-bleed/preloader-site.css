@@ -1,0 +1,27 @@
+#preloader .vamp-loader{position:relative;isolation:isolate;min-height:100svh;background:#fff;display:grid;place-items:center;overflow:hidden;--progress:0%}#preloader .vamp-stage{width:min(79vw,1040px);aspect-ratio:1696/815;position:relative;margin-top:-2.5vh}#preloader .vamp-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;user-select:none;pointer-events:none}#preloader .vamp-part, #preloader .vamp-original{opacity:0}#preloader .bat{clip-path:inset(0 50% 0 50%);transform:scale(.96);transform-origin:50% 27%}#preloader .vamp{clip-path:inset(0 0 65% 0)}#preloader .shmot{clip-path:inset(0 50% 0 50%)}#preloader .drop{position:absolute;z-index:2;left:50%;top:25%;width:clamp(13px,2.3vw,29px);height:clamp(19px,3.2vw,40px);background:#000;border-radius:75% 0 65% 65%;transform:translate(-50%,-70vh) rotate(-45deg);opacity:0}#preloader .drop.small{top:88%;width:clamp(5px,.8vw,9px);height:clamp(8px,1.2vw,14px);transform:translate(-50%,-19vh) rotate(-45deg)}#preloader .splash{position:absolute;left:50%;top:25%;width:8%;aspect-ratio:1;background:#000;clip-path:polygon(50% 0,57% 34%,83% 5%,67% 43%,100% 50%,67% 57%,83% 95%,57% 66%,50% 100%,43% 66%,17% 95%,33% 57%,0 50%,33% 43%,17% 5%,43% 34%);transform:translate(-50%,-50%) scale(0);opacity:0}#preloader .run{position:absolute;top:28%;height:22%;width:1%;background:#000;border-radius:0 0 60% 60%;transform-origin:top;transform:scaleY(0);opacity:0}#preloader .run-1{left:24%}#preloader .run-2{left:47%;height:19%}#preloader .run-3{left:74%;height:17%}#preloader .vamp-progress{position:absolute;left:clamp(22px,3.4vw,54px);right:clamp(22px,3.4vw,54px);bottom:clamp(81px,8.5vh,112px);display:grid;gap:13px}#preloader .vamp-progress-label{display:flex;align-items:baseline;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:.22em}#preloader .vamp-percent{font-size:15px;letter-spacing:.08em;font-variant-numeric:tabular-nums}#preloader .vamp-track{height:2px;background:#e5e5e5;position:relative}#preloader .vamp-fill{height:100%;width:var(--progress);background:#000;position:relative;transition:width .16s linear}#preloader .vamp-fill:after{content:"";position:absolute;right:-4px;top:-3px;width:8px;height:8px;background:#000;border-radius:60% 0 60% 60%;transform:rotate(-45deg)}#preloader .playing .drop.large{animation:drop .78s .1s cubic-bezier(.28,.03,.85,.4) both}#preloader .playing .splash{animation:splash .56s .8s ease-out both}#preloader .playing .bat{animation:bat-open 1.42s 1s cubic-bezier(.17,.68,.32,1) both}#preloader .playing .vamp{animation:letters 1.55s 1.94s cubic-bezier(.24,.55,.3,1) both}#preloader .playing .run{animation:ink-run .95s 1.69s ease-in both}#preloader .playing .run-2{animation-delay:1.82s}#preloader .playing .run-3{animation-delay:1.9s}#preloader .playing .drop.small{animation:small-drop .55s 3.55s ease-in both}#preloader .playing .shmot{animation:shmot-open .78s 4.02s cubic-bezier(.15,.7,.26,1) both}#preloader .playing .vamp-original{animation:final-logo .35s 4.72s linear both}#preloader .final .vamp-original{opacity:1}#preloader .final .vamp-part, #preloader .final .drop, #preloader .final .splash, #preloader .final .run{display:none}#preloader .exit{animation:fade-out .55s ease forwards}@keyframes drop{0%{opacity:0;transform:translate(-50%,-70vh) rotate(-45deg)}12%{opacity:1}78%{opacity:1;transform:translate(-50%,-15px) rotate(-45deg)}100%{opacity:0;transform:translate(-50%,0) rotate(-45deg) scale(1.8,.3)}}@keyframes splash{0%{opacity:0;transform:translate(-50%,-50%) scale(0)}25%{opacity:.95}100%{opacity:0;transform:translate(-50%,-50%) scale(1.3)}}@keyframes bat-open{0%{opacity:0;clip-path:inset(0 50% 0 50%);transform:scale(.96)}15%{opacity:1}100%{opacity:1;clip-path:inset(0 0 0 0);transform:scale(1)}}@keyframes letters{0%{opacity:0;clip-path:inset(0 0 65% 0);filter:blur(5px)}12%{opacity:1}100%{opacity:1;clip-path:inset(0 0 0 0);filter:blur(0)}}@keyframes ink-run{0%{opacity:0;transform:scaleY(0)}20%{opacity:.8}70%{opacity:.8;transform:scaleY(1)}100%{opacity:0;transform:scaleY(1.1)}}@keyframes small-drop{0%{opacity:0;transform:translate(-50%,-19vh) rotate(-45deg)}15%{opacity:1}85%{opacity:1;transform:translate(-50%,-4px) rotate(-45deg)}100%{opacity:0;transform:translate(-50%,1px) rotate(-45deg) scale(2,.3)}}@keyframes shmot-open{0%{opacity:0;clip-path:inset(0 50% 0 50%)}14%{opacity:1}100%{opacity:1;clip-path:inset(0 0 0 0)}}@keyframes final-logo{from{opacity:0}to{opacity:1}}@keyframes fade-out{to{opacity:0;visibility:hidden}}@media(max-width:700px){#preloader .vamp-stage{width:94vw;margin-top:-4vh}#preloader .vamp-progress{bottom:88px}}@media(max-width:420px){#preloader .vamp-progress-label{font-size:9px}}@media(prefers-reduced-motion:reduce){#preloader .playing .vamp-original{animation:none;opacity:1}#preloader .playing .vamp-part, #preloader .playing .drop, #preloader .playing .splash, #preloader .playing .run{display:none}#preloader .vamp-fill{transition:none}}
+
+#preloader {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+#preloader .vamp-loader {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* Hide bottom loading progress; keep the bat animation */
+.vamp-ink-bleed__progress,
+.vamp-ink-bleed__footer,
+.vamp-ink-bleed__status {
+    display: none !important;
+}
+
+/* Hide the bottom loading bar */
+#preloader .vamp-progress {
+    display: none !important;
+}

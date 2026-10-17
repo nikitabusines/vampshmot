@@ -1,0 +1,77 @@
+# === Секреты и данные ===
+.env
+.env.local
+.env.*.local
+database.db
+database.db-shm
+database.db-wal
+bot-data.db
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# === Зависимости ===
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# === Бэкапы ===
+*.bak
+*.bak2
+*.bak3
+*.bak_poll
+*.bak_port
+*.bak_preloader
+*.backup
+*.orig
+
+# === Загрузки пользователей ===
+uploads/*
+!uploads/.gitkeep
+public/uploads/*
+!public/uploads/.gitkeep
+
+# === PM2 / логи ===
+.pm2/
+logs/
+*.log
+
+# === Временные файлы изображений ===
+*-trimmed.png
+*-inverted.png
+*-temp.png
+*-square.png
+
+# === ОС и редакторы ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# === Временные ===
+tmp/
+temp/
+.cache/
+
+# === Дополнительные исключения ===
+.env.bak*
+.env.backup*
+*.bak-*
+*.bak[0-9]*
+*.bak[0-9][0-9]*
+patch-*.js
+patch.js
+
+# Local backups and temporary maintenance scripts
+backups/
+*.backup*
+*.before-*
+*.catalog-*
+*.save
+*.db.backup*
+*.db.backup*-shm
+*.db.backup*-wal
